@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Plan Xpert</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="css/images/browser.ico" type="image/x-icon" />
+
+        <!-- This is the main css file for the default Alta theme -->
+        <!--<link rel="stylesheet" href="css/libs/oj/v1.1.2/alta/oj-alta-min.css" type="text/css"/>-->
+
+        <!-- These style classes are for demonstration purposes only. -->
+        <!--<link rel="stylesheet" href="css/demo-alta-patterns-min.css"/>-->
+
+        <!-- This is where you would add any app specific styling -->
+        <!--<link rel="stylesheet" href="css/override.css" type="text/css"/>-->
+
+
+        <!-- RequireJS configuration file -->
+        <!--<script data-main="js/main" src="js/libs/require/require.js"></script>-->
+        <script src="libraries/js/libs/require/require.js"></script>
+
+        <!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
+
+
+    </head>
+    <body>
+
+        <!-- The globalBody section is initially hidden so that content is not partially displayed before content is 
+          ** loaded into the dynamic sections.  You will see a jQuery .show() method call at the bottom of the main.js 
+          ** file which is what finally displays the page content. -->
+        <div id="globalBody" style="display: none">
+
+            <!-- 
+            ** This off-canvas section is used when the browser is resized to a 
+            ** medium or smaller media query size. It moves the App Navigation into a drawer.
+            ** The ojModule has the viewmodel bound to the same header module, but the view is 
+            ** changed to use off-canvas template.
+            -->
+            <!-- off-canvas content -->
+<!--            <div id="appDrawer" 
+                 class="oj-offcanvas-start oj-panel demo-appheader-offscreencontent" 
+                 style="height:100%;">
+                <div id='demoAppheaderOffCanvasInnerDiv' data-bind="ojModule: {name: 'header', viewName: 'demoAppHeaderOffCanvasTemplate'}"></div>
+            </div>-->
+
+            <!-- Header section which contains the Global Branding, Global Navigation, 
+            ** and Application Navigation code. Template is located in /templates/header.tmpl.html 
+            -->
+            <!--<header id="headerWrapper" role="banner" data-bind="ojModule: { name: 'header'}"></header>-->
+
+            <!-- This is where your main page content will be loaded -->
+<!--            <div id="mainContainer">
+                <div class="oj-row">
+                    <div id="mainContent" data-bind="ojModule: { name: 'home'}"></div>
+                </div>
+            </div>-->
+            <!--<footer id="footerWrapper" role="footer" data-bind="ojModule: { name: 'footer'}" ></footer>-->
+        </div>
+    </body>
+</html>
+
+
+<script>
+//    function initialize() {
+//        var mapProp = {
+//            center: new google.maps.LatLng(20.6997076, -103.336722),
+//            zoom: 5,
+//            mapTypeId: google.maps.MapTypeId.ROADMAP
+//        };
+//        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+//    }
+//    function loadScript()
+//    {
+//        var script = document.createElement("script");
+//        script.type = "text/javascript";
+//        script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+//        document.body.appendChild(script);
+//    }
+//
+//    window.onload = loadScript;
+</script>
