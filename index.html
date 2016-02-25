@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="sticky-footer-layout">
     <head>
-        <title>Plan Xpert</title>
+        <title>Plan eXpert</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="css/images/browser.ico" type="image/x-icon" />
@@ -15,15 +15,12 @@
         <!-- This is where you would add any app specific styling -->
         <link rel="stylesheet" href="css/default.css" type="text/css"/>
 
-
         <!-- RequireJS configuration file -->
         <script data-main="js/main" src="libraries/js/libs/require/require.js"></script>
 
         <!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
-
-
     </head>
-    <body>
+    <body class="appheader-offcanvas-pushwrapper">
 
         <!-- The globalBody section is initially hidden so that content is not partially displayed before content is 
           ** loaded into the dynamic sections.  You will see a jQuery .show() method call at the bottom of the main.js 
@@ -38,8 +35,7 @@
             -->
             <!-- off-canvas content -->
             <div id="appDrawer" 
-                 class="oj-offcanvas-start oj-panel appheader-offscreencontent" 
-                 style="height:100%;">
+                 class="oj-offcanvas-start oj-panel appheader-offscreencontent full-height">
                 <div id='appHeaderOffCanvasInnerDiv' data-bind="ojModule: {name: 'header', viewName: 'view-parts/header/appHeaderOffCanvasTemplate'}"></div>
             </div>
 
@@ -49,12 +45,11 @@
             <header id="headerWrapper" role="banner" data-bind="ojModule: {name: 'header'}"></header>
 
             <!-- This is where your main page content will be loaded -->
-<!--            <div id="mainContainer">
-                <div class="oj-row">
-                    <div id="mainContent" data-bind="ojModule: { name: 'home'}"></div>
-                </div>
-            </div>-->
-            <footer id="footerWrapper" role="footer" data-bind="ojModule: { name: 'footer'}" ></footer>
+            <div id="mainContainer">
+                <div id="mainContent" data-bind="ojModule: {name: 'home'}"></div>
+            </div>
+
+            <footer id="footerWrapper" role="footer" data-bind="ojModule: {name: 'footer'}" ></footer>
         </div>
     </body>
 </html>

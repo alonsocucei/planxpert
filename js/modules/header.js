@@ -8,28 +8,22 @@
  * @param {type} oj
  * @returns {header_L9.HeaderViewModel}
  */
-define(['view-models/header/ToggleButtonViewModel',
+define(['view-models/GeneralViewModel',
+    'view-models/header/MobileMenuViewModel',
     'view-models/header/MenuViewModel',
     'view-models/header/ToolBarViewModel'],
-        function (ToggleButtonViewModel, MenuViewModel, ToolBarViewModel) {
+        function (GeneralViewModel, MobileMenuViewModel, MenuViewModel, ToolBarViewModel) {
             /**
              * The view model for the header module
              */
 
             function HeaderViewModel() {
                 var self = this;
-                self.toggleButton = new ToggleButtonViewModel();
                 self.homeMenu = new MenuViewModel();
+                self.mobileMenu = new MobileMenuViewModel();
                 self.toolBar = new ToolBarViewModel();
 
-                // Data for application name
-                var appName = {
-                    "id": "qs",
-                    "name": "Plan eXpert"
-                };
-
-                self.appId = appName.id;
-                self.appName = appName.name;
+                self.appTitle = GeneralViewModel.nls("appTitle");
             }
             return HeaderViewModel;
         });

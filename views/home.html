@@ -1,0 +1,32 @@
+<div class="oj-row">
+    <!--Home Description-->
+    <div id="home-description" data-bind="ojModule: {viewName: 'view-parts/home/home-description'}"></div>
+    
+    <!--Home Demo Video-->
+    <div id="home-demo" data-bind="ojModule: {viewName: 'view-parts/home/home-demo'}"></div>    
+
+    <!-- Home Memberships-->
+    <div id="home-membership" data-bind="ojModule: {viewName: 'view-parts/home/home-memberships'}"></div>                            
+    
+    <!-- Home Contact-->
+    <div class="oj-xl-12 oj-lg-12 oj-sm-12 oj-col" style="width: 100%"> 
+        <div id="homeContact" class="mainHomeOdd" >
+            <div class="oj-row">   
+
+                <div class="oj-xl-5 oj-lg-6 oj-md-12 oj-sm-12 oj-col" > 
+                    <div id="homeMap" data-bind="ojModule: { viewName:'map'}"></div>
+                </div>
+                <div class="oj-xl-5 oj-lg-5 oj-md-12 oj-sm-12 oj-col"> 
+                    <div id="homeContactInfo" data-bind="ojModule: { name:'homeContact'}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tercer apartado de página principal EQUIPO-->
+    <div class="oj-xl-12 oj-lg-12 oj-sm-12 oj-col" style="width: 100%"> 
+        <div class="mainHome" >
+            <div id="homeCrew" data-bind="ojModule: { viewName:'homeCrew', name:'homeCrew'}"></div>                            
+        </div>
+    </div>
+</div>

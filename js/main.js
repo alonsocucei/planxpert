@@ -38,7 +38,7 @@ requirejs.config({
     config: {
         ojL10n: {
             merge: {
-                //'ojtranslations/nls/ojtranslations': 'resources/nls/menu'
+                'ojtranslations/nls/ojtranslations': 'resources/nls/translations'
             }
         }
     }
@@ -67,7 +67,7 @@ require(['ojs/ojcore',
         {
             oj.ModuleBinding.defaults.modelPath = 'modules/';
             oj.ModuleBinding.defaults.viewPath = 'text!../views/';
-            oj.ModuleBinding.defaults.viewSuffix = '.tmpl.html';
+            oj.ModuleBinding.defaults.viewSuffix = '.html';
 //
 //            var router = oj.Router.rootInstance;
 //            router.configure({

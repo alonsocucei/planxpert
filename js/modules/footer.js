@@ -7,8 +7,8 @@
  * @param {type} ko
  * @returns {footer_L8.FooterViewModel}
  */
-define(['ojs/ojcore', 'knockout'],
-        function (oj, ko) {
+define(['ojs/ojcore', 'knockout', 'view-models/GeneralViewModel'],
+        function (oj, ko, GeneralViewModel) {
             /**
              * The view model for the footer module
              */
@@ -24,7 +24,8 @@ define(['ojs/ojcore', 'knockout'],
                 //Currently not used
                 //TODO: add our version here
                 self.ojVersion = ko.observable('v' + oj.version + ', rev: ' + oj.revision);
-
+                self.copyright = GeneralViewModel.nls("footer.copyright");
+                
                 self.footerLinks = ko.observableArray([
                     new FooterNavModel('About Oracle', 'aboutOracle', aboutOracle),
                     new FooterNavModel('Contact Us', 'contactUs', contactUs),

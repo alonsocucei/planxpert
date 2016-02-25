@@ -8,7 +8,7 @@
  * @param {type} oj
  * @returns {header_L9.HeaderViewModel}
  */
-define(['ojs/ojcore', 'ojs/ojoffcanvas'],
+define(['ojs/ojcore', 'ojs/ojoffcanvas', 'knockout', 'ojs/ojnavigationlist', 'ojs/ojdatacollection-common'],
         function (oj) {
 
             function ToggleButtonViewModel() {
