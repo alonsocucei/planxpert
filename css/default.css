@@ -87,7 +87,7 @@ footer {
     margin: -32px 0 0 -16px;
 }
 
-.image{
+.image {
     padding: 10px 10px 10px 0px; 
     width:auto;
 }
@@ -122,7 +122,7 @@ footer {
     padding-top: 20px;
 }
 
-.home-description-text {
+.home-description-text, .home-contact-descritpion {
     text-align: justify;
     line-height: 1.8;
     padding: 10px 20px 0px 0px;
@@ -130,7 +130,7 @@ footer {
 
 }
 
-.home-description-image{
+.home-description-image {
     padding: 30px 10px 10px 0px; 
     width:100%; 
     max-width: 100%; 
@@ -151,15 +151,25 @@ footer {
     border: 0px;
 }
 
-.home-memberships-title {
+.home-memberships-title, .home-crew-title {
     font-size: 2em;
     padding-top: 20px;
     text-align:center;
     margin-bottom: 40px;
 }
 
-.home-memberships-table {
+.home-memberships-table, .home-crew-table {
     width:80%; 
     margin-left: 10%; 
     margin-right: 10%; 
+}
+
+.home-contact-title {
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.home-contact-map {
+    width:auto;
+    height:400px;
 }

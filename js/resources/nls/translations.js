@@ -25,7 +25,11 @@ define({
                     "createUpTo10Plans": "Crear hasta 10 Planes"
                 },
                 "seeMore": "Ver más"
-            }
+            },
+            "contactTitle" : "Contacto",
+            "contactDescription" : "Aqui van los datos de contacto",
+            "crewTitle" : "Nuestro equipo",
+            "crewTableSeeMore": "Ver más"
         },
         "footer": {
             "copyright": "Copyright &copy; 2016 Plan eXpert and/or its affiliates. All rights reserved"

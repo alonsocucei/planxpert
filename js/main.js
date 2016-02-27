@@ -19,6 +19,8 @@ requirejs.config({
         'ojtranslations': libs + '/oj/v1.1.2/resources',
         'signals': libs + '/js-signals/signals.min',
         'text': libs + '/require/text',
+        'async' : libs + '/require/async',
+        'google' : libs + '/google/maps/maps',
         'view-models': 'modules/view-models'
     },
     // Shim configurations for modules that do not expose AMD
